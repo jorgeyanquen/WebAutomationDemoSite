@@ -11,12 +11,12 @@ public class AlertWebAutomationDemoSiteStep {
     public void Alertas() throws InterruptedException {
 
         alertWebAutomationDemoSitePage.botonswitch();
-
         alertWebAutomationDemoSitePage.Alertauno();
         alertWebAutomationDemoSitePage.Alertados();
         alertWebAutomationDemoSitePage.alertatres();
-
-
     }
-
+    @Step
+    public void validar(){
+        alertWebAutomationDemoSitePage.validacion();
+    }
 }

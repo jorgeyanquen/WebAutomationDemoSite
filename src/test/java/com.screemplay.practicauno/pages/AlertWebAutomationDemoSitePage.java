@@ -52,22 +52,20 @@ public class AlertWebAutomationDemoSitePage extends PageObject {
 public void Alertados() throws InterruptedException {
     //Automatizacion opcion alerta ok o cancelar
        btnopcion2.click();
-
-        btnopciondosuno.click();
-
+       btnopciondosuno.click();
        getDriver().switchTo().alert().dismiss();
 
 }
 public void alertatres() throws InterruptedException {
     //Automatizacion opcion tres alerta con texto
-              btnopciontres.click();
-              btnopciontresuno.click();
-      getDriver().switchTo().alert().sendKeys("Hola Mundo");
-
-      getDriver().switchTo().alert().accept();
+    btnopciontres.click();
+    btnopciontresuno.click();
+    getDriver().switchTo().alert().sendKeys("Hola Mundo");
+    getDriver().switchTo().alert().accept();
     Thread.sleep(6000);
-     String strMensaje = lblHomePpal.getText();
-        assertThat(strMensaje, containsString("Hello Hola Mundo How are you today"));
-
 }
+        public void validacion (){
+        String strMensaje = lblHomePpal.getText();
+        assertThat(strMensaje, containsString("Hello Hola Mundo How are you today"));
+    }
 }

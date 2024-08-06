@@ -49,6 +49,6 @@ public class WebAutomationDemoSiteValidationDefinitions {
 
     @Then("he verifies that the screen with the text Hello hello world How are you today loads")
     public void he_verifies_that_the_screen_with_the_text_hello_hello_world_how_are_you_today_loads() {
-
+        alertWebAutomationDemoSiteStep.validar();
     }
 }
