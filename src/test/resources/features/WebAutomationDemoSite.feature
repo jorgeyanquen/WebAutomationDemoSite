@@ -8,5 +8,7 @@ Feature: You want to automate the processes on the Web Automation Demo Site page
    # Dado que Carlos quiere acceder a la Web Automation Demo Site
     When he registers on the page
     #Cuando el realiza el registro en la página
+      | nombres | apellidos | direccion      | correo              | telefono   |seleccionar ciudad | contraseña | confirmar contraseña |
+      | Juan    | Perez     | calle 22 2a-02 | juanperez@gmail.com | 3142324354 | Australia          |12345      | 12345                |
     Then he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads
     # Entonces el verifica que se carga la pantalla con texto Double Click on Edit Icon to EDIT the Table Row
