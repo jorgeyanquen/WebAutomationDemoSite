@@ -1,18 +1,19 @@
 package com.screemplay.practicauno.Steps;
 
-import com.screemplay.practicauno.pages.LoginWebAutomationDemoSitePage;
+import com.screemplay.practicauno.pages.RegistroWebAutomationDemoSitePage;
 import net.thucydides.core.annotations.Step;
 
 import java.util.List;
 
-public class LoginWebAutomationDemoSiteStep {
+public class RegistroWebAutomationDemoSiteStep {
 
 
-    LoginWebAutomationDemoSitePage loginWebAutomationDemoSitePage;
+    RegistroWebAutomationDemoSitePage loginWebAutomationDemoSitePage;
 
     @Step
     public void WebAutomationDemoSite(){
         loginWebAutomationDemoSitePage.open();
+        loginWebAutomationDemoSitePage.botonacceso();
 
     }
 

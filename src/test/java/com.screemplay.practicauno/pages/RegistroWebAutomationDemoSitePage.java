@@ -7,8 +7,12 @@ import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.support.FindBy;
 
 
-@DefaultUrl("http://demo.automationtesting.in/Register.html")
-public class LoginWebAutomationDemoSitePage extends PageObject {
+//@DefaultUrl("http://demo.automationtesting.in/Register.html")
+@DefaultUrl("https://demo.automationtesting.in/Index.html")
+public class RegistroWebAutomationDemoSitePage extends PageObject {
+    @FindBy(xpath = "//*[@id=\"enterimg\"]")
+    public WebElementFacade btnacceso;
+
 
     @FindBy(xpath = "//*[@id=\"basicBootstrapForm\"]/div[1]/div[1]/input")
        public WebElementFacade txtnombres;
@@ -78,6 +82,10 @@ public class LoginWebAutomationDemoSitePage extends PageObject {
 
     @FindBy(id = "submitbtn")
     public WebElementFacade btnsubmit;
+
+    public void botonacceso(){
+        btnacceso.click();
+    }
 
       public void ingresarnombres(String datoPrueba){
         txtnombres.click();

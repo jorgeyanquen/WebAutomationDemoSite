@@ -1,6 +1,6 @@
 package com.screemplay.practicauno.definitions;
 
-import com.screemplay.practicauno.Steps.LoginWebAutomationDemoSiteStep;
+import com.screemplay.practicauno.Steps.RegistroWebAutomationDemoSiteStep;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,7 +12,7 @@ import java.util.List;
 public class WebAutomationDemoSiteValidationDefinitions {
 
     @Steps
-    LoginWebAutomationDemoSiteStep loginWebAutomationDemoSiteStep;
+    RegistroWebAutomationDemoSiteStep loginWebAutomationDemoSiteStep;
 
     @Given("Carlos wants to access the Web Automation Demo Site")
     public void carlos_wants_to_access_the_web_automation_demo_site() {
