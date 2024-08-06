@@ -8,9 +8,14 @@ public class AlertWebAutomationDemoSiteStep {
     AlertWebAutomationDemoSitePage alertWebAutomationDemoSitePage;
 
     @Step
-    public void Alertas(){
+    public void Alertas() throws InterruptedException {
 
         alertWebAutomationDemoSitePage.botonswitch();
+
+        alertWebAutomationDemoSitePage.Alertauno();
+        alertWebAutomationDemoSitePage.Alertados();
+        alertWebAutomationDemoSitePage.alertatres();
+
 
     }
 

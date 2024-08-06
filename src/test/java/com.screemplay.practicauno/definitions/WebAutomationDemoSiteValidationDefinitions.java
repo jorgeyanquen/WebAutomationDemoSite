@@ -37,8 +37,9 @@ public class WebAutomationDemoSiteValidationDefinitions {
     }
 
     @When("he enters the alerts section")
-    public void he_enters_the_alerts_section() {
+    public void he_enters_the_alerts_section() throws InterruptedException {
         alertWebAutomationDemoSiteStep.Alertas();
+
     }
 
     @Then("he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads")
