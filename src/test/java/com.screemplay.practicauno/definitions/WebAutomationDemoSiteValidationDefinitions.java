@@ -1,5 +1,6 @@
 package com.screemplay.practicauno.definitions;
 
+import com.screemplay.practicauno.Steps.AlertWebAutomationDemoSiteStep;
 import com.screemplay.practicauno.Steps.RegistroWebAutomationDemoSiteStep;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -13,6 +14,9 @@ public class WebAutomationDemoSiteValidationDefinitions {
 
     @Steps
     RegistroWebAutomationDemoSiteStep loginWebAutomationDemoSiteStep;
+
+    @Steps
+    AlertWebAutomationDemoSiteStep alertWebAutomationDemoSiteStep;
 
     @Given("Carlos wants to access the Web Automation Demo Site")
     public void carlos_wants_to_access_the_web_automation_demo_site() {
@@ -32,8 +36,18 @@ public class WebAutomationDemoSiteValidationDefinitions {
         }
     }
 
+    @When("he enters the alerts section")
+    public void he_enters_the_alerts_section() {
+        alertWebAutomationDemoSiteStep.Alertas();
+    }
+
     @Then("he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads")
     public void he_verifies_that_the_screen_with_the_text_double_click_on_edit_icon_to_edit_the_table_row_loads() {
+
+    }
+
+    @Then("he verifies that the screen with the text Hello hello world How are you today loads")
+    public void he_verifies_that_the_screen_with_the_text_hello_hello_world_how_are_you_today_loads() {
 
     }
 }

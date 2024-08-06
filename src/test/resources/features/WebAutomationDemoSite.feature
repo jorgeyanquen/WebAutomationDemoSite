@@ -14,3 +14,8 @@ Feature: You want to automate the processes on the Web Automation Demo Site page
     # Entonces el verifica que se carga la pantalla con texto Double Click on Edit Icon to EDIT the Table Row
 
 
+  @CasoExitosoAlertas
+  Scenario: automate registration on the Web Automation Demo Site page
+    Given Carlos wants to access the Web Automation Demo Site
+    When he enters the alerts section
+    Then he verifies that the screen with the text Hello hello world How are you today loads
