@@ -19,3 +19,10 @@ Feature: You want to automate the processes on the Web Automation Demo Site page
     Given Carlos wants to access the Web Automation Demo Site
     When he enters the alerts section
     Then he verifies that the screen with the text Hello hello world How are you today loads
+
+
+    @CasoExitosoVentanas
+    Scenario: automate registration on the Web Automation Demo Site page
+      Given Carlos wants to access the Web Automation Demo Site
+      When he enters the windows section
+      Then he verifies that the screen with
