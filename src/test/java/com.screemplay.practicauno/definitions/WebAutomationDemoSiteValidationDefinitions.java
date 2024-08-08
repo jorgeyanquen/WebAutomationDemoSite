@@ -32,6 +32,9 @@ public class WebAutomationDemoSiteValidationDefinitions {
     @Steps
     DateWebAutomationDemoSiteStep dateWebAutomationDemoSiteStep;
 
+    @Steps
+    SliderWebAutomationDemoSiteStep sliderWebAutomationDemoSiteStep;
+
 
     @Given("Carlos wants to access the Web Automation Demo Site")
     public void carlos_wants_to_access_the_web_automation_demo_site() {
@@ -101,6 +104,11 @@ public class WebAutomationDemoSiteValidationDefinitions {
         dateWebAutomationDemoSiteStep.date();
     }
 
+    @When("you enter the slider section")
+    public void you_enter_the_slider_section() {
+    sliderWebAutomationDemoSiteStep.slider();
+    }
+
     @Then("he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads")
     public void he_verifies_that_the_screen_with_the_text_double_click_on_edit_icon_to_edit_the_table_row_loads() {
 
@@ -133,6 +141,11 @@ public class WebAutomationDemoSiteValidationDefinitions {
     @Then("check that the date was added correctly")
     public void check_that_the_date_was_added_correctly() throws InterruptedException {
         dateWebAutomationDemoSiteStep.validacionfechatxt();
+    }
+
+    @Then("check that the slider was moved correctly")
+    public void check_that_the_slider_was_moved_correctly() {
+
     }
 
 }

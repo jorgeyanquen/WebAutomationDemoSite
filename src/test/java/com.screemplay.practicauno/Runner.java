@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com.screemplay.practicauno.definitions",
-        tags = "@CasoExitosoDatepicker"
+        tags = "@CasoExitosoSlider"
 )
 
 public class Runner {

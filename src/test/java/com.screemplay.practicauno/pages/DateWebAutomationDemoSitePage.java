@@ -2,7 +2,13 @@ package com.screemplay.practicauno.pages;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+
+import javax.swing.*;
+
+import java.awt.event.ActionEvent;
+import java.beans.PropertyChangeListener;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
@@ -44,6 +50,12 @@ public class DateWebAutomationDemoSitePage extends PageObject {
         btndate1.click();
         btndateatras.click();
         btnfecha1.click();
+
+    }
+    public void prueba(){
+        Actions move = new Actions(getDriver());
+
+        move.dragAndDropBy(btndate1, 200,100).perform();
     }
 
     public void seleccionfecha2(){

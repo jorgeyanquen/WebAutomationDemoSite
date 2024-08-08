@@ -55,3 +55,9 @@ Feature: You want to automate the processes on the Web Automation Demo Site page
     Given Carlos wants to access the Web Automation Demo Site
     When you enter the datepicker section
     Then check that the date was added correctly
+
+  @CasoExitosoSlider
+  Scenario: automate the slider on the Web Automation Demo Site page
+    Given Carlos wants to access the Web Automation Demo Site
+    When you enter the slider section
+    Then check that the slider was moved correctly
