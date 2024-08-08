@@ -26,6 +26,9 @@ public class WebAutomationDemoSiteValidationDefinitions {
     @Steps
     AcordeonWebAutomationDemoSiteStep acordeonWebAutomationDemoSiteStep;
 
+    @Steps
+    AutocompletWebAutomationDemoSiteStep autocompletWebAutomationDemoSiteStep;
+
 
     @Given("Carlos wants to access the Web Automation Demo Site")
     public void carlos_wants_to_access_the_web_automation_demo_site() {
@@ -75,6 +78,11 @@ public class WebAutomationDemoSiteValidationDefinitions {
         acordeonWebAutomationDemoSiteStep.validacionventana();
     }
 
+    @When("you enter the autocomplete section")
+    public void you_enter_the_autocomplete_section() {
+
+    }
+
     @Then("he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads")
     public void he_verifies_that_the_screen_with_the_text_double_click_on_edit_icon_to_edit_the_table_row_loads() {
 
@@ -99,4 +107,9 @@ public class WebAutomationDemoSiteValidationDefinitions {
     public void check_that_the_text_is_correct_in_each_option() {
             acordeonWebAutomationDemoSiteStep.validacion();
     }
+    @Then("you check that the query was added correctly")
+    public void you_check_that_the_query_was_added_correctly() {
+
+    }
+
 }

@@ -41,3 +41,10 @@ Feature: You want to automate the processes on the Web Automation Demo Site page
           Given Carlos wants to access the Web Automation Demo Site
           When you enter the accordion widget section
           Then check that the text is correct in each option
+
+          @CasoExitosoAutoComplet
+
+          Scenario: automate the autocomplete on the Web Automation Demo Site page
+            Given Carlos wants to access the Web Automation Demo Site
+            When you enter the autocomplete section
+            Then you check that the query was added correctly
