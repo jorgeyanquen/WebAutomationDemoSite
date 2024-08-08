@@ -26,3 +26,10 @@ Feature: You want to automate the processes on the Web Automation Demo Site page
       Given Carlos wants to access the Web Automation Demo Site
       When he enters the windows section
       Then he verifies that the screen with
+
+
+      @CasoExitosoFrame
+      Scenario: automate the frames on the Web Automation Demo Site page
+        Given Carlos wants to access the Web Automation Demo Site
+        When he enters the frames section
+        Then he verifies that it allows typing in the text fields

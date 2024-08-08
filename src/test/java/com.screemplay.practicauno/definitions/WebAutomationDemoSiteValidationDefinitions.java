@@ -51,6 +51,10 @@ public class WebAutomationDemoSiteValidationDefinitions {
     public void he_enters_the_windows_section() throws InterruptedException {
         ventanasWebAutomationDemoSiteStep.ventanas();
     }
+    @When("he enters the frames section")
+    public void he_enters_the_frames_section() {
+
+    }
 
     @Then("he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads")
     public void he_verifies_that_the_screen_with_the_text_double_click_on_edit_icon_to_edit_the_table_row_loads() {
@@ -67,5 +71,8 @@ public class WebAutomationDemoSiteValidationDefinitions {
         ventanasWebAutomationDemoSiteStep.validaciones();
     }
 
+    @Then("he verifies that it allows typing in the text fields")
+    public void he_verifies_that_it_allows_typing_in_the_text_fields() {
 
+    }
 }
