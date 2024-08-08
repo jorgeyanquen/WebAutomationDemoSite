@@ -97,6 +97,6 @@ public class WebAutomationDemoSiteValidationDefinitions {
 
     @Then("check that the text is correct in each option")
     public void check_that_the_text_is_correct_in_each_option() {
-
+            acordeonWebAutomationDemoSiteStep.validacion();
     }
 }

@@ -10,5 +10,11 @@ public class AcordeonWebAutomationDemoSiteStep {
     @Step
     public void validacionventana(){
         acordeonWebAutomationDemoSitePage.botonwindows();
+      //  acordeonWebAutomationDemoSitePage.opcion1();
+    }
+
+    @Step
+    public void validacion(){
+        acordeonWebAutomationDemoSitePage.validacion1();
     }
 }
