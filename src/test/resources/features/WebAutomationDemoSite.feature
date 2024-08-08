@@ -32,4 +32,6 @@ Feature: You want to automate the processes on the Web Automation Demo Site page
       Scenario: automate the frames on the Web Automation Demo Site page
         Given Carlos wants to access the Web Automation Demo Site
         When he enters the frames section
+        | frame1      | frame2      |
+        | holamundo1  | holamundo2   |
         Then he verifies that it allows typing in the text fields

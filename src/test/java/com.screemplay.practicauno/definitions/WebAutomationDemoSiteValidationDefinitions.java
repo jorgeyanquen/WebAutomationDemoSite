@@ -56,8 +56,18 @@ public class WebAutomationDemoSiteValidationDefinitions {
         ventanasWebAutomationDemoSiteStep.ventanas();
     }
     @When("he enters the frames section")
-    public void he_enters_the_frames_section() {
-        frameWebAutomationDemoSiteStep.frame();
+    public void he_enters_the_frames_section(DataTable dtDatosForm) {
+
+        List<List<String>> cells = dtDatosForm.cells();
+        for(int i=1; i<cells.size(); i++){
+            frameWebAutomationDemoSiteStep.frame(cells, i);
+            try{
+                Thread.sleep(5000);
+            }catch(InterruptedException e){
+
+            }
+        }
+
     }
 
     @Then("he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads")
@@ -77,6 +87,6 @@ public class WebAutomationDemoSiteValidationDefinitions {
 
     @Then("he verifies that it allows typing in the text fields")
     public void he_verifies_that_it_allows_typing_in_the_text_fields() {
-
+      //  frameWebAutomationDemoSiteStep.validacionventana();
     }
 }
