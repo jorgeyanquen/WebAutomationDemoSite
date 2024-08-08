@@ -30,6 +30,12 @@ public class AcordeonWebAutomationDemoSitePage extends PageObject {
     @FindBy(xpath = "//*[@id=\"collapse3\"]/div")
     public WebElementFacade valopcion3;
 
+    @FindBy(xpath = "//*[@id=\"Functionality\"]/div/div/div/div[4]/div[1]/h4")
+    public WebElementFacade btnopcion4;
+
+    @FindBy(xpath = "//*[@id=\"collapse4\"]/div")
+    public WebElementFacade valopcion4;
+
     public void botonwindows() {
         //Ingreso al menu
         btnwidget.click();
@@ -42,6 +48,10 @@ public class AcordeonWebAutomationDemoSitePage extends PageObject {
     }
     public void opcion3(){
         btnopcion3.click();
+    }
+
+    public void opcion4(){
+        btnopcion4.click();
     }
 
     public void validacion1(){
@@ -57,5 +67,10 @@ public class AcordeonWebAutomationDemoSitePage extends PageObject {
     public void validacion3(){
         String strMensaje = valopcion3.getText();
         assertThat(strMensaje, containsString("As the name indicates, you can chain the methods without breaking the code i.e. you can write the code for each element continuously."));
+    }
+
+    public void validacion4(){
+        String strMensaje = valopcion4.getText();
+        assertThat(strMensaje, containsString("NTest your web application across the most popular browsers including Firefox,Chrome and Internet Explorer to validate the functionality. You can easily switch between the browsers without changing the code."));
     }
 }

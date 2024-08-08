@@ -12,6 +12,7 @@ public class AcordeonWebAutomationDemoSiteStep {
         acordeonWebAutomationDemoSitePage.botonwindows();
         acordeonWebAutomationDemoSitePage.opcion2();
         acordeonWebAutomationDemoSitePage.opcion3();
+        acordeonWebAutomationDemoSitePage.opcion4();
     }
 
     @Step
@@ -19,5 +20,6 @@ public class AcordeonWebAutomationDemoSiteStep {
         acordeonWebAutomationDemoSitePage.validacion1();
         acordeonWebAutomationDemoSitePage.validacion2();
         acordeonWebAutomationDemoSitePage.validacion3();
+        acordeonWebAutomationDemoSitePage.validacion4();
     }
 }
