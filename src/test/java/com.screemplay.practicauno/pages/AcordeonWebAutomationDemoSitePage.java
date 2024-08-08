@@ -15,11 +15,20 @@ public class AcordeonWebAutomationDemoSitePage extends PageObject {
     @FindBy(xpath = "//*[@id=\"header\"]/nav/div/div[2]/ul/li[5]/ul/li[1]/a")
     public WebElementFacade btnAcordeon;
 
-    @FindBy(xpath = "//*[@id=\"Functionality\"]/div/div/div/div[1]/div[1]/h4/a/b")
-    public WebElementFacade btnopcion1;
+    @FindBy(xpath = "//*[@id=\"Functionality\"]/div/div/div/div[2]/div[1]/h4/a/b")
+    public WebElementFacade btnopcion2;
 
     @FindBy(xpath = "//*[@id=\"collapse1\"]/div")
     public WebElementFacade valopcion1;
+
+    @FindBy(xpath = "//*[@id=\"collapse2\"]/div")
+    public WebElementFacade valopcion2;
+
+    @FindBy(xpath = "//*[@id=\"Functionality\"]/div/div/div/div[3]/div[1]/h4")
+    public WebElementFacade btnopcion3;
+
+    @FindBy(xpath = "//*[@id=\"collapse3\"]/div")
+    public WebElementFacade valopcion3;
 
     public void botonwindows() {
         //Ingreso al menu
@@ -27,13 +36,26 @@ public class AcordeonWebAutomationDemoSitePage extends PageObject {
         btnAcordeon.click();
     }
 
-    public void opcion1(){
-        btnopcion1.click();
-        btnopcion1.click();
+    public void opcion2(){
+        btnopcion2.click();
+
+    }
+    public void opcion3(){
+        btnopcion3.click();
     }
 
     public void validacion1(){
         String strMensaje = valopcion1.getText();
         assertThat(strMensaje, containsString("This Automation Testing API is very simple to read and understand. Every method in this is self explanatory. If a layman looks into this code/script can understand what is happening. You can read the automation script like manual test case."));
+    }
+
+    public void validacion2(){
+        String strMensaje = valopcion2.getText();
+        assertThat(strMensaje, containsString("In this Automation tool, each and every functionality will be achieved by Single line code. i.e. Selecting a Value from dropdown, Switching between windows and Drag and Drop functionality etc..."));
+    }
+
+    public void validacion3(){
+        String strMensaje = valopcion3.getText();
+        assertThat(strMensaje, containsString("As the name indicates, you can chain the methods without breaking the code i.e. you can write the code for each element continuously."));
     }
 }
