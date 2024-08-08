@@ -2,7 +2,7 @@ package com.screemplay.practicauno.Steps;
 
 import com.screemplay.practicauno.pages.VentanasWebAutomationDemoSitePage;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.Steps;
+
 
 public class VentanasWebAutomationDemoSiteStep {
 
@@ -12,10 +12,14 @@ public class VentanasWebAutomationDemoSiteStep {
     public void ventanas() throws InterruptedException {
         ventanasWebAutomationDemoSitePage.botonwindows();
         ventanasWebAutomationDemoSitePage.ventanauno();
+        ventanasWebAutomationDemoSitePage.ventanados();
+        ventanasWebAutomationDemoSitePage.ventanatres();
     }
 
     @Step
     public void validaciones (){
         ventanasWebAutomationDemoSitePage.validacionventanauno();
+        ventanasWebAutomationDemoSitePage.validacionventanados();
+        ventanasWebAutomationDemoSitePage.validacionventanatres();
     }
 }

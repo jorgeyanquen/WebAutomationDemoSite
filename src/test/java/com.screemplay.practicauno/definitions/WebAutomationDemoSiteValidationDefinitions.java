@@ -64,7 +64,7 @@ public class WebAutomationDemoSiteValidationDefinitions {
 
     @Then("he verifies that the screen with")
     public void he_verifies_that_the_screen_with() {
-     //   ventanasWebAutomationDemoSiteStep.validaciones();
+        ventanasWebAutomationDemoSiteStep.validaciones();
     }
 
 
