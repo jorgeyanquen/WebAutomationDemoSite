@@ -79,7 +79,17 @@ public class WebAutomationDemoSiteValidationDefinitions {
     }
 
     @When("you enter the autocomplete section")
-    public void you_enter_the_autocomplete_section() {
+    public void you_enter_the_autocomplete_section(DataTable dtDatosForm) {
+
+        List<List<String>> cells = dtDatosForm.cells();
+        for(int i=1; i<cells.size(); i++){
+            autocompletWebAutomationDemoSiteStep.autocomplet(cells, i);
+            try{
+                Thread.sleep(5000);
+            }catch(InterruptedException e){
+
+            }
+        }
 
     }
 
