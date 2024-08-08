@@ -21,31 +21,37 @@ Feature: You want to automate the processes on the Web Automation Demo Site page
     Then he verifies that the screen with the text Hello hello world How are you today loads
 
 
-    @CasoExitosoVentanas
-    Scenario: automate registration on the Web Automation Demo Site page
-      Given Carlos wants to access the Web Automation Demo Site
-      When he enters the windows section
-      Then he verifies that the screen with
+  @CasoExitosoVentanas
+  Scenario: automate registration on the Web Automation Demo Site page
+    Given Carlos wants to access the Web Automation Demo Site
+    When he enters the windows section
+    Then he verifies that the screen with
 
 
-      @CasoExitosoFrame
-      Scenario: automate the frames on the Web Automation Demo Site page
-        Given Carlos wants to access the Web Automation Demo Site
-        When he enters the frames section
-        | frame1      | frame2      |
-        | holamundo1  | holamundo2   |
-        Then he verifies that it allows typing in the text fields
+  @CasoExitosoFrame
+  Scenario: automate the frames on the Web Automation Demo Site page
+    Given Carlos wants to access the Web Automation Demo Site
+    When he enters the frames section
+      | frame1      | frame2      |
+      | holamundo1  | holamundo2   |
+    Then he verifies that it allows typing in the text fields
 
-        @CasoExitosoAcordeon
-        Scenario: automate the accordion on the Web Automation Demo Site page
-          Given Carlos wants to access the Web Automation Demo Site
-          When you enter the accordion widget section
-          Then check that the text is correct in each option
+  @CasoExitosoAcordeon
+  Scenario: automate the accordion on the Web Automation Demo Site page
+    Given Carlos wants to access the Web Automation Demo Site
+    When you enter the accordion widget section
+    Then check that the text is correct in each option
 
-          @CasoExitosoAutoComplet
-          Scenario: automate the autocomplete on the Web Automation Demo Site page
-            Given Carlos wants to access the Web Automation Demo Site
-            When you enter the autocomplete section
-            | dato     |
-            | 11111 |
-            Then you check that the query was added correctly
+  @CasoExitosoAutoComplet
+  Scenario: automate the autocomplete on the Web Automation Demo Site page
+    Given Carlos wants to access the Web Automation Demo Site
+    When you enter the autocomplete section
+      | dato     |
+      | 11111 |
+    Then you check that the query was added correctly
+
+  @CasoExitosoDatepicker
+  Scenario: automate the datepicker on the Web Automation Demo Site page
+    Given Carlos wants to access the Web Automation Demo Site
+    When you enter the datepicker section
+    Then check that the date was added correctly

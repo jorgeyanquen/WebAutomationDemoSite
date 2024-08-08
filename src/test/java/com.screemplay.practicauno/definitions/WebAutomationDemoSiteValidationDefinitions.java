@@ -29,6 +29,9 @@ public class WebAutomationDemoSiteValidationDefinitions {
     @Steps
     AutocompletWebAutomationDemoSiteStep autocompletWebAutomationDemoSiteStep;
 
+    @Steps
+    DateWebAutomationDemoSiteStep dateWebAutomationDemoSiteStep;
+
 
     @Given("Carlos wants to access the Web Automation Demo Site")
     public void carlos_wants_to_access_the_web_automation_demo_site() {
@@ -93,6 +96,11 @@ public class WebAutomationDemoSiteValidationDefinitions {
 
     }
 
+    @When("you enter the datepicker section")
+    public void you_enter_the_datepicker_section() {
+        dateWebAutomationDemoSiteStep.date();
+    }
+
     @Then("he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads")
     public void he_verifies_that_the_screen_with_the_text_double_click_on_edit_icon_to_edit_the_table_row_loads() {
 
@@ -119,6 +127,11 @@ public class WebAutomationDemoSiteValidationDefinitions {
     }
     @Then("you check that the query was added correctly")
     public void you_check_that_the_query_was_added_correctly() {
+
+    }
+
+    @Then("check that the date was added correctly")
+    public void check_that_the_date_was_added_correctly() {
 
     }
 
