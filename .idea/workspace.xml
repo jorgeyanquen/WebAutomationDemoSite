@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3a88b69-a75a-40bc-bb38-68ce9e54ff41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/Steps/DateWebAutomationDemoSiteStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/pages/DateWebAutomationDemoSitePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/Steps/DateWebAutomationDemoSiteStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/Steps/DateWebAutomationDemoSiteStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/definitions/WebAutomationDemoSiteValidationDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/definitions/WebAutomationDemoSiteValidationDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/WebAutomationDemoSite.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/WebAutomationDemoSite.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/pages/DateWebAutomationDemoSitePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.screemplay.practicauno/pages/DateWebAutomationDemoSitePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

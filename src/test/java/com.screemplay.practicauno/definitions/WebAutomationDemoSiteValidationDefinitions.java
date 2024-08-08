@@ -97,7 +97,7 @@ public class WebAutomationDemoSiteValidationDefinitions {
     }
 
     @When("you enter the datepicker section")
-    public void you_enter_the_datepicker_section() {
+    public void you_enter_the_datepicker_section() throws InterruptedException {
         dateWebAutomationDemoSiteStep.date();
     }
 
@@ -131,8 +131,8 @@ public class WebAutomationDemoSiteValidationDefinitions {
     }
 
     @Then("check that the date was added correctly")
-    public void check_that_the_date_was_added_correctly() {
-
+    public void check_that_the_date_was_added_correctly() throws InterruptedException {
+        dateWebAutomationDemoSiteStep.validacionfechatxt();
     }
 
 }
