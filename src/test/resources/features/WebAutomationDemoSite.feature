@@ -35,3 +35,9 @@ Feature: You want to automate the processes on the Web Automation Demo Site page
         | frame1      | frame2      |
         | holamundo1  | holamundo2   |
         Then he verifies that it allows typing in the text fields
+
+        @CasoExitosoAcordeon
+        Scenario: automate the accordion on the Web Automation Demo Site page
+          Given Carlos wants to access the Web Automation Demo Site
+          When you enter the accordion widget section
+          Then check that the text is correct in each option

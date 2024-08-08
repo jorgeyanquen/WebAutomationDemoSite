@@ -1,9 +1,6 @@
 package com.screemplay.practicauno.definitions;
 
-import com.screemplay.practicauno.Steps.AlertWebAutomationDemoSiteStep;
-import com.screemplay.practicauno.Steps.FrameWebAutomationDemoSiteStep;
-import com.screemplay.practicauno.Steps.RegistroWebAutomationDemoSiteStep;
-import com.screemplay.practicauno.Steps.VentanasWebAutomationDemoSiteStep;
+import com.screemplay.practicauno.Steps.*;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -25,6 +22,9 @@ public class WebAutomationDemoSiteValidationDefinitions {
 
     @Steps
     FrameWebAutomationDemoSiteStep frameWebAutomationDemoSiteStep;
+
+    @Steps
+    AcordeonWebAutomationDemoSiteStep acordeonWebAutomationDemoSiteStep;
 
 
     @Given("Carlos wants to access the Web Automation Demo Site")
@@ -70,6 +70,11 @@ public class WebAutomationDemoSiteValidationDefinitions {
 
     }
 
+    @When("you enter the accordion widget section")
+    public void you_enter_the_accordion_widget_section() {
+        acordeonWebAutomationDemoSiteStep.validacionventana();
+    }
+
     @Then("he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads")
     public void he_verifies_that_the_screen_with_the_text_double_click_on_edit_icon_to_edit_the_table_row_loads() {
 
@@ -88,5 +93,10 @@ public class WebAutomationDemoSiteValidationDefinitions {
     @Then("he verifies that it allows typing in the text fields")
     public void he_verifies_that_it_allows_typing_in_the_text_fields() {
       //  frameWebAutomationDemoSiteStep.validacionventana();
+    }
+
+    @Then("check that the text is correct in each option")
+    public void check_that_the_text_is_correct_in_each_option() {
+
     }
 }
