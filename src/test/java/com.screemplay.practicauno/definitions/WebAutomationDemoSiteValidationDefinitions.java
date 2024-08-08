@@ -1,6 +1,7 @@
 package com.screemplay.practicauno.definitions;
 
 import com.screemplay.practicauno.Steps.AlertWebAutomationDemoSiteStep;
+import com.screemplay.practicauno.Steps.FrameWebAutomationDemoSiteStep;
 import com.screemplay.practicauno.Steps.RegistroWebAutomationDemoSiteStep;
 import com.screemplay.practicauno.Steps.VentanasWebAutomationDemoSiteStep;
 import io.cucumber.datatable.DataTable;
@@ -21,6 +22,9 @@ public class WebAutomationDemoSiteValidationDefinitions {
 
     @Steps
     VentanasWebAutomationDemoSiteStep ventanasWebAutomationDemoSiteStep;
+
+    @Steps
+    FrameWebAutomationDemoSiteStep frameWebAutomationDemoSiteStep;
 
 
     @Given("Carlos wants to access the Web Automation Demo Site")
@@ -53,7 +57,7 @@ public class WebAutomationDemoSiteValidationDefinitions {
     }
     @When("he enters the frames section")
     public void he_enters_the_frames_section() {
-
+        frameWebAutomationDemoSiteStep.frame();
     }
 
     @Then("he verifies that the screen with the text Double Click on Edit Icon to EDIT the Table Row loads")
